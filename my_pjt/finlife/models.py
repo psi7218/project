@@ -16,7 +16,7 @@ class DepositOptions(models.Model):
     product = models.ForeignKey(DepositProducts, on_delete=models.CASCADE)
     fin_prdt_cd = models.TextField()
     intr_rate_type_nm = models.CharField(max_length=100)
-    intr_rate = models.FloatField()
-    intr_rate2 = models.FloatField()
+    intr_rate = models.FloatField(null=True)
+    intr_rate2 = models.FloatField(null=True)
     save_trm = models.FloatField()
     

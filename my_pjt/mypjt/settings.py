@@ -22,7 +22,7 @@ env = environ.Env(DEBUG=(bool,True))
 environ.Env.read_env(
     env_file = os.path.join(BASE_DIR, '.env')
 )
-API_KEY = env('568c302d4a9167e7248f17f6e13d6968')
+API_KEY = env('API_KEY')
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
